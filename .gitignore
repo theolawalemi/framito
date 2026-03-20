@@ -1,0 +1,17 @@
+# frameit — .gitignore
+dist/
+*.tsbuildinfo
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# macOS
+.DS_Store
+
+# npm pack artifacts
+*.tgz
+
+# Editors
+.vscode/
+.idea/

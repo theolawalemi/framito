@@ -1,0 +1,68 @@
+{
+  "name": "framito",
+  "version": "1.0.0",
+  "description": "Scaffold once, ship to every framework.",
+  "type": "module",
+  "bin": {
+    "framito": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "cli",
+    "scaffold",
+    "library",
+    "framework",
+    "react",
+    "vue",
+    "svelte",
+    "solid",
+    "vanilla",
+    "core-adapter",
+    "subpath-exports",
+    "multi-framework",
+    "component-library",
+    "typescript",
+    "javascript",
+    "tsup",
+    "create-library",
+    "npm-package"
+  ],
+  "author": "Olawale Balo — Product Designer + Design Engineer",
+  "license": "MIT",
+  "homepage": "https://olawalemi.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theolawalemi/framito.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theolawalemi/framito/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.1.0",
+    "chalk": "^5.6.2",
+    "fs-extra": "^11.3.4"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "latest",
+    "@types/node": "latest",
+    "tsup": "latest",
+    "typescript": "latest",
+    "vitest": "^4.1.0"
+  }
+}
