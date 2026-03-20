@@ -15,6 +15,7 @@ import { generateProject } from './generator.js'
 import type { Framework, NamingConvention, OutputFormat, Template } from './types.js'
 
 async function main() {
+  const nameArg = process.argv[2]
 
   console.log()
   console.log(chalk.hex('#20C55C').bold([
@@ -34,6 +35,7 @@ async function main() {
   const libraryName = await p.text({
     message: 'Library name?',
     placeholder: 'my-library',
+    initialValue: nameArg || '',
     validate: (v) => {
       if (!v || v.trim().length === 0) return 'Library name is required'
       // Disallow leading slash and path separators to prevent directory traversal.
